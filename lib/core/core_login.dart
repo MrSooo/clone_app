@@ -16,7 +16,7 @@ class _CoreLoginState extends State<CoreLogin> {
       appBar: AppBar(title: const Text("Core Login")),
       body: const Center(
         child: Text(
-          "Core",
+          "Core V2.0",
         ),
       ),
     );
