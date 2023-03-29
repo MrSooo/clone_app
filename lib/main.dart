@@ -16,11 +16,14 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Column(
-        children: const [
-          CoreLogin(),
-          CloneLogin(),
-        ],
+      home: Scaffold(
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: const [
+            CoreLogin(),
+            CloneLogin(),
+          ],
+        ),
       ),
     );
   }
