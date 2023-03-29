@@ -11,11 +11,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      //This a comment
       title: 'Flutter Demo V2.0',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
       home: const CoreLogin(),
     );
+    //Another comment
   }
 }
