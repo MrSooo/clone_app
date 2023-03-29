@@ -1,4 +1,4 @@
-import 'package:core_app/clone/clone_login.dart';
+import 'package:core_app/core/core_counter.dart';
 import 'package:core_app/core/core_login.dart';
 import 'package:flutter/material.dart';
 
@@ -17,15 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Scaffold(
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: const [
-            CoreLogin(),
-            CloneLogin(),
-          ],
-        ),
-      ),
+      home: const CounterScreen(),
     );
     //Another comment
   }
