@@ -12,12 +12,9 @@ class CoreLogin extends StatefulWidget {
 class _CoreLoginState extends State<CoreLogin> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text("Core Login")),
-      body: const Center(
-        child: Text(
-          "Core V2.0",
-        ),
+    return const Center(
+      child: Text(
+        "Core V2.0",
       ),
     );
   }
