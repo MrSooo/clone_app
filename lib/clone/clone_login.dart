@@ -1,6 +1,9 @@
+import 'package:core_app/clone/extendable/b_clone.dart';
 import 'package:flutter/material.dart';
 
-class CloneLogin extends StatefulWidget {
+import '../core/core_login.dart';
+
+class CloneLogin extends CoreLogin {
   const CloneLogin({super.key});
 
   @override
@@ -8,10 +11,11 @@ class CloneLogin extends StatefulWidget {
 }
 
 class _CloneLoginState extends State<CloneLogin> {
+  final BClone bClone = BClone();
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: Text("Cloned login"),
+    return Center(
+      child: Text(bClone.value()),
     );
   }
 }
