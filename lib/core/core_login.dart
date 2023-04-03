@@ -1,3 +1,4 @@
+import 'package:core_app/core/extendable/b_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
@@ -10,11 +11,12 @@ class CoreLogin extends StatefulWidget {
 }
 
 class _CoreLoginState extends State<CoreLogin> {
+  final BCore bCore = BCore();
   @override
   Widget build(BuildContext context) {
-    return const Center(
+    return Center(
       child: Text(
-        "Core V2.0",
+        bCore.value(),
         //ABBYCZZZZZ
       ),
     );
